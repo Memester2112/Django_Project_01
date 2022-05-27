@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="color: rgb(236, 59, 10); text-align: center; text-shadow: 1cm;">Hi from Templates/about.html</h1>
+<div style="border: 10px solid blue; padding: 20px; align-self:initial;">
+    This is a box
+</div>
+<br>
+<br>
+
+<p>
+    {{some_text}} got its independence in {{some_num}}
+</p>
+<hr style="width: 200px;">
+<ol style="border:10px; border-style: double;">
+    {% for i in my_list %}
+    <li>
+        {{i | upper}}   
+    </li>
+    {% endfor %}
+</ol>
+{% endblock %}  
